@@ -10,7 +10,7 @@
                 rapido seu dev!
             </h2>
 
-            <form action="">
+            <form action="/jobs/add" method="POST">
                 <div class="form-group">
                     <label for="title">Titulo da vaga:</label>
                     <input type="text" class="form-control" id="title" name="title"
@@ -18,42 +18,33 @@
                     <small id="titleHelp" class="form-text text-muted">O titulo é muito importante, seja claro e
                         objetivo</small>
                 </div>
-            </form>
-
-            <form action="">
+                        
                 <div class="form-group">
                     <label for="description">Descrição da vaga:</label>
                     <textarea type="text" class="form-control" id="description" name="description"
                         placeholder="Descreva as atividades da vaga" required></textarea>
                 </div>
-            </form>
-
-            <form action="">
+                      
                 <div class="form-group">
                     <label for="company">Empresa contratante:</label>
                     <input type="text" class="form-control" id="company" name="company"
                         placeholder="Digite a empreva que ira contratar" required />
                 </div>
-            </form>
-
-            <form action="">
+            
                 <div class="form-group">
                     <label for="email">E-mail para contato</label>
                     <input type="email" class="form-control" id="email" name="email"
                         placeholder="Digite o e-mail para contato" required />
                 </div>
-            </form>
-
-            <form action="">
+            
                 <div class="form-group">
                     <label for="salary">Salario oferecido:</label>
                     <input type="salary" class="form-control" id="salary" name="salary"
                         placeholder="Digite o salario da vaga" required />
                 </div>
-            </form>
-
-            <input type="hidden" name="new_job" value="1">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+                <input type="hidden" name="new_job" value="1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>            
         </div>
     </div>
 </div>
